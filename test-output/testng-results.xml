@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="149320" started-at="2022-06-12T02:37:31 EEST" finished-at="2022-06-12T02:40:01 EEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="149320" started-at="2022-06-12T02:37:31 EEST" finished-at="2022-06-12T02:40:01 EEST">
+      <class name="webAutomation.Elearning.unitbv.TestSuite.TestRunner">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="Setup" is-config="true" duration-ms="8292" started-at="2022-06-12T02:37:31 EEST" finished-at="2022-06-12T02:37:40 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="runner()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="runner" duration-ms="15184" started-at="2022-06-12T02:37:40 EEST" finished-at="2022-06-12T02:37:55 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner -->
+        <test-method status="PASS" signature="runner_calender()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="runner_calender" duration-ms="50436" started-at="2022-06-12T02:37:55 EEST" finished-at="2022-06-12T02:38:45 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_calender -->
+        <test-method status="PASS" signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="runner_grade" duration-ms="26545" started-at="2022-06-12T02:38:45 EEST" finished-at="2022-06-12T02:39:12 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_grade -->
+        <test-method status="PASS" signature="runner_postAnnouncement()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="runner_postAnnouncement" duration-ms="47686" started-at="2022-06-12T02:39:12 EEST" finished-at="2022-06-12T02:40:00 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_postAnnouncement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.TestRunner@43a0cee9]" name="tearDown" is-config="true" duration-ms="1061" started-at="2022-06-12T02:40:00 EEST" finished-at="2022-06-12T02:40:01 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
