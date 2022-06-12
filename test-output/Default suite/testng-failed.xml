@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutomation.Elearning.unitbv.TestSuite.TestRunner">
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
         <methods>
-          <include name="runner_postAnnouncement"/>
-          <include name="runner_grade"/>
+          <include name="runner_postAnnouncement" invocation-numbers="1 2"/>
           <include name="Setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.TestRunner -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

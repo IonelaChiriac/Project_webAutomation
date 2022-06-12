@@ -26,7 +26,7 @@ public class Base_class {
 		prop = new Properties(); //obj of properties which is an extension of a file accessing config file
 		FileInputStream ip;
 		try {
-			ip = new FileInputStream(current + "\\src\\main\\java\\webAutomation\\Elearning\\unitbv\\config.properties"); // FileInputStream will access the path of the directory
+			ip = new FileInputStream(current + "\\src\\main\\java\\webAutomation\\Elearning\\unitbv\\Utillities\\config.properties"); // FileInputStream will access the path of the directory
 			prop.load(ip); //after loading file is ready to use
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

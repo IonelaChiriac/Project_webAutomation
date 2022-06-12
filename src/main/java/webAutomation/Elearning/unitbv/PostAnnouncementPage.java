@@ -24,28 +24,17 @@ public class PostAnnouncementPage extends Base_class {
 	@FindBy(id = "id_summary_editoreditable")
 	WebElement fieldTextContent;
 	
-	//make text bold
-		
+	@FindBy(css  = ".filemanager-toolbar>div>div:nth-child(1)")
+	WebElement fileSelection;
 
-//	@FindBy(id  = "yui_3_17_2_1_1654967124425_752")
-//	WebElement fileSelection;
-//	@FindBy(id  = "yui_3_17_2_1_1654967124425_751")
-//	WebElement fileSelection1;
-//	@FindBy(id  = "yui_3_17_2_1_1654967124425_750")
-//	WebElement fileSelection2;
-//	@FindBy(id  = "yui_3_17_2_1_1654967124425_749")
-//	WebElement fileSelection3;
-//	@FindBy(xpath  = "//div[@id='yui_3_17_2_1_1654967124425_750']")
-//	WebElement fileSelection4;
-
-//	@FindBy(xpath = "//span[@id='yui_3_17_2_1_1654966143973_1286']")
-//	WebElement click_personalFiles;
+	@FindBy(css = ".fp-repo-area div:nth-child(4)")
+	WebElement click_personalFiles;
 //	
-//	@FindBy(xpath = "//span[@id='yui_3_17_2_1_1654966143973_1322']")
-//	WebElement click_File;
+	@FindBy(css = "tr td:nth-child(3) .fp-filename-icon a")
+	WebElement click_File;
 //	
-//	@FindBy(xpath = "//button[@id='yui_3_17_2_1_1654966143973_1429']")
-//	WebElement click_SaveFile;
+	@FindBy(css = ".fp-select-confirm.btn-primary.btn")
+	WebElement click_SaveFile;
 	
 	@FindBy(xpath = "//div[@id='id_summary_editoreditable']")
 	WebElement fieldTextContentSelect;
@@ -67,7 +56,7 @@ public class PostAnnouncementPage extends Base_class {
 
 	
 	//calling elements from the method CalendarEvent
-	public void PostAnnouncement() throws InterruptedException {
+	public void PostAnnouncement(String postMsg,String contentMsg) throws InterruptedException {
 		//Thread.sleep(2000);
 		clickElement(click_pagesDropDnBtn);
 		//Thread.sleep(2000);
@@ -75,34 +64,18 @@ public class PostAnnouncementPage extends Base_class {
 		//Thread.sleep(2000);
 		clickElement(addNewPost);
 		//Thread.sleep(2000);
-		sendKeysInElement(fieldTextTitle, "Test post message");
+		sendKeysInElement(fieldTextTitle, postMsg);
 		Thread.sleep(2000);
-		sendKeysInElement(fieldTextContent, "Test content message");
+		sendKeysInElement(fieldTextContent, contentMsg);
 		Thread.sleep(2000);
-		//clickElement(click_BoldBtn);
-		//Thread.sleep(1000);
-		//atach file
-		//clickElement(click_Toolbar);
-		//Thread.sleep(2000);
-		
-//		clickElement(fileSelection);
+		clickElement(fileSelection);
+		Thread.sleep(2000);				
+		clickElement(click_personalFiles);
+		Thread.sleep(2000);
+		clickElement(click_File);
 //		Thread.sleep(2000);
-//		clickElement(fileSelection1);
-//		Thread.sleep(2000);
-//		clickElement(fileSelection2);
-//		Thread.sleep(2000);
-//		clickElement(fileSelection3);
-//		Thread.sleep(2000);
-//		clickElement(fileSelection4);
-//		Thread.sleep(2000);
-		
-		
-//		clickElement(click_personalFiles);
-//		Thread.sleep(2000);
-//		clickElement(click_File);
-//		Thread.sleep(2000);
-//		clickElement(click_SaveFile);
-//		Thread.sleep(2000);
+		clickElement(click_SaveFile);
+		Thread.sleep(2000);
 		clickElement(click_optionBt);
 		Thread.sleep(2000);
 		clickElement(select_onlyMe);

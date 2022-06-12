@@ -61,7 +61,7 @@ public class CalendarEvent extends Base_class{
 	}
 	
 	//calling elements from the method CalendarEvent
-	public void SetCalendarEvent() throws InterruptedException {
+	public void SetCalendarEvent(String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException {
 		Thread.sleep(2000);
 		clickElement(click_pagesDropDnBtn);
 		Thread.sleep(2000);
@@ -73,17 +73,17 @@ public class CalendarEvent extends Base_class{
 		Thread.sleep(2000);
 		clickElement(click_newEventBtn);
 		Thread.sleep(1000);
-		sendKeysInElement(fieldText, "Prezentare lucrare disertatie TIN 2022");
+		sendKeysInElement(fieldText, textArea);
 		Thread.sleep(1000);
-		selectByValue(date,"27");
+		selectByValue(date,dates);
 		Thread.sleep(1000);
-		selectByValue(month,"6");
+		selectByValue(month,months);
 		Thread.sleep(1000);
-		selectByValue(year,"2022");
+		selectByValue(year,years);
 		Thread.sleep(1000);
-		selectByValue(hour,"18");
+		selectByValue(hour,hours);
 		Thread.sleep(1000);
-		selectByValue(minute,"55");
+		selectByValue(minute,mins);
 		Thread.sleep(1000);
 		clickElement(scroll_button);
 		Thread.sleep(5000);
