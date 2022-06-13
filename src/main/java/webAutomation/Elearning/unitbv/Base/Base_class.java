@@ -86,12 +86,13 @@ public class Base_class {
 		
 		//execution in background headless -> chromeOptions.addArguments("--headless");
 		ChromeOptions chromeOptions = new ChromeOptions();
+		//in headless there might possible cookie window or pop notification appears, for that we have disable below things.
 		chromeOptions.addArguments("disable-infobars");
 		chromeOptions.addArguments("--disable-gpu");
 		chromeOptions.addArguments("--disable-extensions");
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
-		chromeOptions.addArguments("--headless");
+		//chromeOptions.addArguments("--headless");
 		test.info("Headless execution");
 		chromeOptions.addArguments("--window-size=1580,1280");
 		
