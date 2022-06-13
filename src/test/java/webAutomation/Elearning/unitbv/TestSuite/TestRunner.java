@@ -32,7 +32,7 @@ public class TestRunner extends Base_class {
 	}
 	
 	@Test(dataProvider = "testdata")
-	public void runner(String user, String password) throws InterruptedException {
+	public void runner(String user, String password) throws InterruptedException, IOException {
 		
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
@@ -46,7 +46,7 @@ public class TestRunner extends Base_class {
 	}
 	
 	@Test
-	public void runner_grade() throws InterruptedException {
+	public void runner_grade() throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file
@@ -63,7 +63,7 @@ public class TestRunner extends Base_class {
 	}
 	
 	@Test(dataProvider ="testdata")
-	public void runner_calender(String user, String password,String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException {
+	public void runner_calender(String user, String password,String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file
@@ -81,7 +81,7 @@ public class TestRunner extends Base_class {
 	
 
 	@Test(dataProvider = "testdataPost")
-	public void runner_postAnnouncement(String user, String password,String postMsg,String contentMsg) throws InterruptedException {
+	public void runner_postAnnouncement(String user, String password,String postMsg,String contentMsg) throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file
@@ -96,4 +96,3 @@ public class TestRunner extends Base_class {
 	}
 	
 }
-//test eclipse with git

@@ -1,5 +1,7 @@
 package webAutomation.Elearning.unitbv;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,7 +58,7 @@ public class PostAnnouncementPage extends Base_class {
 
 	
 	//calling elements from the method CalendarEvent
-	public void PostAnnouncement(String postMsg,String contentMsg) throws InterruptedException {
+	public void PostAnnouncement(String postMsg,String contentMsg) throws InterruptedException, IOException {
 		//Thread.sleep(2000);
 		clickElement(click_pagesDropDnBtn);
 		//Thread.sleep(2000);

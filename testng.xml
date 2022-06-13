@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Elearning.unitbv">
-	<test name="Elearning.unitbv Test">
-		<classes>
-			<class name="webAutomation.Elearning.unitbv.LoginPage" />
-			<class name="webAutomation.Elearning.unitbv.Grade" />
-			<class name="webAutomation.Elearning.unitbv.CalendarEvent" />
-			<class name="webAutomation.Elearning.unitbv.PostAnnouncementPage" />
-			<class name="webAutomation.Elearning.unitbv.LogoutPage" /> <!-- package name.classname -->
-		</classes>
-	</test>
+<suite name="Suite">
+  <test thread-count="1" parallel="false" name="Test">
+    <classes>
+    
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest"/>
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest"/>
+   
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest"/>
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest"/>
 
-	<test name="Elearning.unitbv exclude Test">
-		<classes>
-			<class name="">
-				<methods>
-					<exclude name="" />  <!-- exclude only " " @Test method -->
-					<!-- <include name=""/> include only " " @Test method -->
-					<!-- to exclude include everything from mobile* (use asterix) -->
-				</methods>
-			</class>
-		</classes>
-	</test>
-
-	 <test name = "Elearning.unitbv Regression">
-		<groups>
-			<run>
-				<include name = "Smoke"/> <!-- run specific tests -->
-			</run>
-		</groups>
-		<classes>
-			<class name=""/> 
-			<class name=""/>
-		</classes>
-	</test>  
-
-	<!-- to run all the tests from the package usually used for non-regression 
-		or critical flows tests <packages> <package name="Test_elearning.unitbv"/> 
-		</packages> -->
-
-
-
-</suite> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

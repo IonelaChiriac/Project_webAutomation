@@ -1,99 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="176686" started-at="2022-06-12T14:09:58 EEST" finished-at="2022-06-12T14:12:55 EEST">
+  <suite name="Default suite" duration-ms="40964" started-at="2022-06-13T22:49:12 EEST" finished-at="2022-06-13T22:49:53 EEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="176686" started-at="2022-06-12T14:09:58 EEST" finished-at="2022-06-12T14:12:55 EEST">
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@16f7c8c1]" name="Setup" is-config="true" duration-ms="10174" started-at="2022-06-12T14:09:59 EEST" finished-at="2022-06-12T14:10:09 EEST">
+    <test name="Default test" duration-ms="40964" started-at="2022-06-13T22:49:12 EEST" finished-at="2022-06-13T22:49:53 EEST">
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@78186a70]" name="Setup" is-config="true" duration-ms="7246" started-at="2022-06-13T22:49:12 EEST" finished-at="2022-06-13T22:49:19 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner_postAnnouncement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@16f7c8c1]" name="runner_postAnnouncement" duration-ms="56828" started-at="2022-06-12T14:10:10 EEST" data-provider="testdataPost" finished-at="2022-06-12T14:11:07 EEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ionela2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[This post test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[content message test]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@78186a70]" name="runner_grade" duration-ms="32250" started-at="2022-06-13T22:49:19 EEST" finished-at="2022-06-13T22:49:52 EEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runner_postAnnouncement -->
-        <test-method status="PASS" signature="runner_postAnnouncement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@16f7c8c1]" name="runner_postAnnouncement" duration-ms="53339" started-at="2022-06-12T14:11:07 EEST" data-provider="testdataPost" finished-at="2022-06-12T14:12:01 EEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ionela2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[This post test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[content message test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runner_postAnnouncement -->
-        <test-method status="PASS" signature="runner_postAnnouncement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@16f7c8c1]" name="runner_postAnnouncement" duration-ms="53686" started-at="2022-06-12T14:12:01 EEST" data-provider="testdataPost" finished-at="2022-06-12T14:12:54 EEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ionela2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[This post test]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[content message test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runner_postAnnouncement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@16f7c8c1]" name="tearDown" is-config="true" duration-ms="978" started-at="2022-06-12T14:12:54 EEST" finished-at="2022-06-12T14:12:55 EEST">
+        </test-method> <!-- runner_grade -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@78186a70]" name="tearDown" is-config="true" duration-ms="1388" started-at="2022-06-13T22:49:52 EEST" finished-at="2022-06-13T22:49:53 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

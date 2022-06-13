@@ -20,7 +20,7 @@ public class RunnerLoginTest extends Base_class {
 	}
 	
 	@Test(dataProvider = "testdata")
-	public void runner(String user, String password) throws InterruptedException {
+	public void runner(String user, String password) throws InterruptedException, IOException {
 		
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file

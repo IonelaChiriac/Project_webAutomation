@@ -1,5 +1,7 @@
 package webAutomation.Elearning.unitbv.TestSuite;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import webAutomation.Elearning.unitbv.Grade;
@@ -11,7 +13,7 @@ public class RunnerGradeTest extends Base_class {
 	
 	
 	@Test
-	public void runner_grade() throws InterruptedException {
+	public void runner_grade() throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file

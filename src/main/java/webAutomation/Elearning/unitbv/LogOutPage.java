@@ -25,11 +25,19 @@ public class LogOutPage extends Base_class {
 	}
 	
 	public void log_out() throws InterruptedException {
+		try{
+			if(menuBtn.isDisplayed()) {
+		
 		clickElement(menuBtn);
 		Thread.sleep(2000);
 		
 		clickElement(logoutBtn);
 		Thread.sleep(2000);
+		}
+		}
+		catch(Exception e) {
+			
+		}
 }
 }
 	

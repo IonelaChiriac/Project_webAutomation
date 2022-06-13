@@ -1,5 +1,7 @@
 package webAutomation.Elearning.unitbv;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +29,7 @@ public class LoginPage extends Base_class{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void login(String Userid, String Password) throws InterruptedException {
+	public void login(String Userid, String Password) throws InterruptedException, IOException {
 		
 		sendKeysInElement(id, Userid);
 		Thread.sleep(2000);

@@ -22,7 +22,7 @@ public class RunnerPostMessageTest extends Base_class{
 	}
 	
 	@Test(dataProvider = "testdataPost")
-	public void runner_postAnnouncement(String user, String password,String postMsg,String contentMsg) throws InterruptedException {
+	public void runner_postAnnouncement(String user, String password,String postMsg,String contentMsg) throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file

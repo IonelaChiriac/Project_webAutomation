@@ -1,5 +1,7 @@
 package webAutomation.Elearning.unitbv;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,7 +35,7 @@ public class Grade extends Base_class {
 	}
 	
 	//calling elements from the method Grade
-	public void gradeTest() throws InterruptedException {
+	public void gradeTest() throws InterruptedException, IOException {
 		Thread.sleep(1000);
 		clickElement(homePage);
 		Thread.sleep(1000);

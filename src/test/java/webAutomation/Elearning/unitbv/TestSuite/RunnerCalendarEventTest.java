@@ -11,7 +11,7 @@ import webAutomation.Elearning.unitbv.LoginPage;
 import webAutomation.Elearning.unitbv.Base.Base_class;
 import webAutomation.Elearning.unitbv.Base.Excel_Base;
 
-public class RunnerCalenderEventTest extends Base_class{
+public class RunnerCalendarEventTest extends Base_class{
 	
 	
 	Excel_Base dataExcel;
@@ -24,7 +24,7 @@ public class RunnerCalenderEventTest extends Base_class{
 	
 	
 	@Test(dataProvider ="testdata")
-	public void runner_calender(String user, String password,String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException {
+	public void runner_calender(String user, String password,String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException, IOException {
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file

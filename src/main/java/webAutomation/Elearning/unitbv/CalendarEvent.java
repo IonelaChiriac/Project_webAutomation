@@ -1,5 +1,7 @@
 package webAutomation.Elearning.unitbv;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -61,7 +63,7 @@ public class CalendarEvent extends Base_class{
 	}
 	
 	//calling elements from the method CalendarEvent
-	public void SetCalendarEvent(String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException {
+	public void SetCalendarEvent(String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException, IOException {
 		Thread.sleep(2000);
 		clickElement(click_pagesDropDnBtn);
 		Thread.sleep(2000);
