@@ -85,7 +85,7 @@ public class PostAnnouncementPage extends Base_class {
 		clickElement(click_SaveBtn);
 	
 		
-		Thread.sleep(15000);
+		Thread.sleep(1000);
 
 		
 	}

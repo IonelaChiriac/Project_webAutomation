@@ -4,8 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,9 +15,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -36,14 +41,10 @@ public class Base_class {
 	public static ExtentReports extent;
 	public static ExtentTest test; // from test object we define every step log, by using keyword like test.log or test.pass
 
-
 	int count =1;
 	int key=1;
 	int clic = 1;
 	int dd =1;
-
-
-
 	
 	public Base_class() {
 		String current = System.getProperty("user.dir"); //path to directory of the project
@@ -57,24 +58,25 @@ public class Base_class {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-			
-			
+			e.printStackTrace();			
 		}
-		
-		
-
+				
 	}
 
-	@BeforeMethod
+	@BeforeClass
 	public void Setup() {
 
+	
+	
 		
-		String outputDirectory = System.getProperty("user.dir")+"\\reports\\ExtentReport"+count+".html";
+		  String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
+
+
+
+		String outputDirectory = System.getProperty("user.dir")+"\\reports\\ExtentReport"+timestamp+".html";
 		htmlReporter = new ExtentSparkReporter(outputDirectory);
 		htmlReporter.config().setReportName("TesResults");
 		htmlReporter.config().setDocumentTitle("TesResults");
-
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("TesResults","Elearning.unitbv");
@@ -84,15 +86,15 @@ public class Base_class {
 		WebDriverManager.chromedriver().setup();
 
 		
-		//execution in background headless -> chromeOptions.addArguments("--headless");
+		//execution in background with headless, window browser will not open -> chromeOptions.addArguments("--headless");
 		ChromeOptions chromeOptions = new ChromeOptions();
-		//in headless there might possible cookie window or pop notification appears, for that we have disable below things.
+		//in headless there might appear some cookie window or pop notification, for that the below things are disabled
 		chromeOptions.addArguments("disable-infobars");
 		chromeOptions.addArguments("--disable-gpu");
 		chromeOptions.addArguments("--disable-extensions");
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
-		//chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--headless");
 		test.info("Headless execution");
 		chromeOptions.addArguments("--window-size=1580,1280");
 		
@@ -108,7 +110,7 @@ public class Base_class {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 
 		File SRC= ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"\\reports\\"+ScreenshotName+".png";
+		String path = System.getProperty("user.dir")+"\\reports\\screenshots\\"+ScreenshotName+".png";
 		File destination = new File(path);
 		FileUtils.copyFile(SRC,destination );
 
@@ -137,12 +139,10 @@ public class Base_class {
 		select.selectByValue(val);
 		test.pass("user successfully set the drop down value of "+ val +" on this element "+element);
 		test.pass("<a href="+capturescreenshot("dropDownSet"+dd)+"><img src="+capturescreenshot("DropdownSet"+dd+".png")+" /></a>");
-       ++dd;
+		++dd;
 	}
-	
-
-	
-	@AfterMethod
+		
+	@AfterClass
 	public void tearDown() {
 		count++;
 		extent.flush();

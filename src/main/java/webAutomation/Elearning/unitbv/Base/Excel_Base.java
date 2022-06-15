@@ -46,20 +46,6 @@ public class Excel_Base {
 	}
 	
 	
-	   //TODO fix the warnings Excel_base
-		//TODO fix maven issues from eclipse and cmd
-		//TODO recap the structure of the project should I have  build lib file? resource file with chromedriver?
-		//TODO clean pom unused libraries
-		//TODO create another sheet in an excel file and take the data from there
-		//TODO captures? file with video? 
-		//TODO in git details about the project images etc - private or public (config project to private?)
-		//TODO Ant? (integrated in Jenkins) 
-		//TODO reports
-		//TODO Arhitecture, class diagram
-		//TODO details of the below flow Excel_base
-		//TODO performance testing
-	
-	//increment each row and column with 1
 	public Object[][] testdata(String file,String sheetName) throws IOException {
 
 		excelUtilsSetup(file, sheetName);

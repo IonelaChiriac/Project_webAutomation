@@ -11,28 +11,17 @@
 	<name>Elearning.unitbv</name>
 	<url>http://www.example.com</url>
 
-	<!--<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M7</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>testng1.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build> -->
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	
+
+
+    <java.version>11</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+</properties>
 
 	<dependencies>
 
@@ -96,7 +85,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.6.0</version>
-			<scope>test</scope>
+	<!--<<scope>test</scope> -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 
@@ -107,43 +96,53 @@
 			<version>5.0.9</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.4</version>
+		</dependency>
 
 	</dependencies>
 
-	<!--	<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.7.1</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>5.7.1</version>
-			<scope>test</scope>
-		</dependency> -->
-
-	<!-- <dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.12</version>
-		</dependency> -->
-
-	<!--<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
 				<configuration>
-					<fork>true</fork>
-					<executable>C:\Program Files\Jav\jdk1.8.0_333\bin\javac.exe</executable>
-					<source>1.8</source>
-					<target>1.8</target>
-					<compilerArgument>-XDignore.symbol.file</compilerArgument>
+					<suiteXmlFiles>
+						<systemPropertyVariables>
+							<browser>{Browser}</browser>
+						</systemPropertyVariables>
+						<suiteXmlFile>testng1.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build> -->
+
+
+		<!--  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version>
+           <configuration>
+        <suiteXmlFiles>
+            <suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
+        </suiteXmlFiles>
+    </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>-->
 
 </project>
