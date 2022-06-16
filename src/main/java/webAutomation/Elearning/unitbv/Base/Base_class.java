@@ -94,7 +94,7 @@ public class Base_class {
 		chromeOptions.addArguments("--disable-extensions");
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
-		chromeOptions.addArguments("--headless");
+		//chromeOptions.addArguments("--headless");
 		test.info("Headless execution");
 		chromeOptions.addArguments("--window-size=1580,1280");
 		
