@@ -60,15 +60,6 @@ public class Base_class {
 		} catch (IOException e) {
 			e.printStackTrace();			
 		}
-				
-	}
-
-	@BeforeClass
-	public void Setup() {
-
-	
-	
-		
 		  String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
 
 
@@ -77,13 +68,21 @@ public class Base_class {
 		htmlReporter = new ExtentSparkReporter(outputDirectory);
 		htmlReporter.config().setReportName("TesResults");
 		htmlReporter.config().setDocumentTitle("TesResults");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("TesResults","Elearning.unitbv");
-		
-		test = extent.createTest("TestName1","Initializing browser and URL");
+				
+	}
 
+	@BeforeMethod
+	public void Setup() {
+
+	
+	
+		
+
+		getInstance();
+		
+	
 		WebDriverManager.chromedriver().setup();
+		test = extent.createTest("BrowserLaunchForTest","BrowserLaunch and Successfully Loaded");
 
 		
 		//execution in background with headless, window browser will not open -> chromeOptions.addArguments("--headless");
@@ -110,7 +109,7 @@ public class Base_class {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 
 		File SRC= ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"\\reports\\"+ScreenshotName+".png";
+		String path = System.getProperty("user.dir")+"\\reports\\screenshots\\"+ScreenshotName+".png";
 		File destination = new File(path);
 		FileUtils.copyFile(SRC,destination );
 
@@ -119,18 +118,21 @@ public class Base_class {
 		}
 
 	public void sendKeysInElement(WebElement ele, String text) throws IOException {
-		ele.clear();
+		
+		try{ele.clear();
 		ele.sendKeys(text);
 		test.pass("user successfuly enter the text : "+text +" on this element :"+ ele);
 		
-		test.pass("<a href="+capturescreenshot("SendKeys"+key)+"><img src="+capturescreenshot("SendKeys"+".png")+" /></a>");
 		++key;
+		}
+		catch(Exception e) {
+			
+		}
 	}
 
 	public void clickElement(WebElement ele) throws IOException {
 		ele.click();
 		test.pass("user successfully clicked on this element "+ ele);
-		test.pass("<a href="+capturescreenshot("clicked"+clic)+"><img src="+capturescreenshot("clicked"+clic+".png")+" /></a>");
 		++clic;
 
 	}
@@ -141,12 +143,31 @@ public class Base_class {
 		test.pass("<a href="+capturescreenshot("dropDownSet"+dd)+"><img src="+capturescreenshot("DropdownSet"+dd+".png")+" /></a>");
 		++dd;
 	}
+	
+	
+	public static ExtentReports getInstance() {
+	        if(extent == null) {
+	        	extent = new ExtentReports();
+	    		extent.attachReporter(htmlReporter);
+	    		extent.setSystemInfo("TesResults","Elearning.unitbv");
+
+	        }   
+	        return extent;
+	    }
+
+
 		
-	@AfterClass
+	@AfterSuite
 	public void tearDown() {
 		count++;
 		extent.flush();
 		driver.quit();
+	}
+	
+	@AfterMethod
+	public void closeTests() {
+		driver.close(); //closes the browsers for all the tests
+		
 	}
 
 }

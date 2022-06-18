@@ -15,16 +15,18 @@ import webAutomation.Elearning.unitbv.Base.Excel_Base;
 public class RunnerCalendarEventTest extends Base_class{
 	
 	
-	Excel_Base dataExcel;
-	@DataProvider(name = "testdata")
+	Excel_Base dataExcel1;
+	@DataProvider(name = "testDataEvent")
 	public Object[][] getData() throws IOException {
-	dataExcel = new Excel_Base();
-	Object data[][] = dataExcel.testdata("SearchBook","input");
+	dataExcel1 = new Excel_Base();
+	Object data[][] = dataExcel1.testdata("SearchBook","input");
 	return data;
 	}
 	
-	@Test(dataProvider ="testdata")
+	@Test(dataProvider ="testDataEvent")
 	public void runner_calender(String user, String password,String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException, IOException {
+		test = extent.createTest("VerifyCalenderEventTest","Calender Event Test");
+
 		LoginPage log = new LoginPage(driver); //create an object
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file

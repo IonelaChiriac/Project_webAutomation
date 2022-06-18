@@ -36,7 +36,8 @@ public class LoginPage extends Base_class{
 		
 		sendKeysInElement(password, Password);
 		Thread.sleep(2000);
-		
+		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
+
 		clickElement(loginBtn);
 		Thread.sleep(2000);
 	}

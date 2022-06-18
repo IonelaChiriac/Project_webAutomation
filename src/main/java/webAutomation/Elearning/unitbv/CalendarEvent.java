@@ -68,6 +68,8 @@ public class CalendarEvent extends Base_class{
 		clickElement(click_pagesDropDnBtn);
 		Thread.sleep(2000);
 		clickElement(calendarLink);
+		test.pass("<a href="+capturescreenshot("CalenderLinkPage")+"><img src="+capturescreenshot("CalenderLinkPage")+" /></a>");
+
 		Thread.sleep(2000);
 		clickElement(click_nextEventsDropDnBtn);
 		Thread.sleep(2000);
@@ -86,11 +88,15 @@ public class CalendarEvent extends Base_class{
 		selectByValue(hour,hours);
 		Thread.sleep(1000);
 		selectByValue(minute,mins);
+		test.pass("<a href="+capturescreenshot("AfterInsertingallfieldsValues")+"><img src="+capturescreenshot("AfterInsertingallfieldsValues")+" /></a>");
+
 		Thread.sleep(1000);
 		clickElement(scroll_button);
 		Thread.sleep(5000);
 		clickElement(click_monthEventDropdBtn);
 		clickElement(click_monthEvents);
+		test.pass("<a href="+capturescreenshot("AfterEvent")+"><img src="+capturescreenshot("AfterEvent")+" /></a>");
+
 		Thread.sleep(5000);		
 	}
 }

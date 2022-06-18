@@ -1,5 +1,8 @@
 package webAutomation.Elearning.unitbv;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,15 +27,23 @@ public class LogOutPage extends Base_class {
 		PageFactory.initElements(driver, this);
 	}
 	
+	int i=1;
+	
 	public void log_out() throws InterruptedException {
+		  String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
+
 		try{
 			if(menuBtn.isDisplayed()) {
-		
+	
 		clickElement(menuBtn);
+		test.pass("<a href="+capturescreenshot("ConfigMenu"+timestamp)+"><img src="+capturescreenshot("ConfigMenu"+timestamp)+" /></a>");
+++i;
 		Thread.sleep(2000);
 		
 		clickElement(logoutBtn);
 		Thread.sleep(2000);
+		test.pass("<a href="+capturescreenshot("AfterLogout")+"><img src="+capturescreenshot("AfterLogout")+" /></a>");
+
 		}
 		}
 		catch(Exception e) {

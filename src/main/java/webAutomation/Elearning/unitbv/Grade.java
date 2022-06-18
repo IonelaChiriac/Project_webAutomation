@@ -40,8 +40,12 @@ public class Grade extends Base_class {
 		clickElement(homePage);
 		Thread.sleep(1000);
 		clickElement(courseLink);
+		test.pass("<a href="+capturescreenshot("OnCoursePage")+"><img src="+capturescreenshot("CoursePage")+" /></a>");
+
 		Thread.sleep(1000);
 		clickElement(gradesLink);
+		test.pass("<a href="+capturescreenshot("GradesScreen")+"><img src="+capturescreenshot("GradesScreen")+" /></a>");
+
 		Thread.sleep(1000);
 		System.out.println("My Grade is : " + gradeScore.getText());
 
