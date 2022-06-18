@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="4" parallel="false" preserve-order="true" verbose="10" name="Suite">
-  <test  name="Test">
+<suite   parallel="false" preserve-order="true" verbose="10" name="Suite">
+  <test thread-count="1" name="Test">
     <classes>
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest"/>
-
-   
+          <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest"/>
     
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest"/>
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest"/>
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest"/>
     </classes>
   </test> <!-- Test -->
-  
-  <test name="Test3">
-  <classes>
-        <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest"/>
-  </classes>
-   </test>
-   
-   <test name="Test1">
-   <classes>
-   <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest"/>
-  </classes>
-   </test>
-   
-   <test name="Test2">
-  <classes>
-      
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest"/>
-  </classes>
-   </test>
 </suite> <!-- Suite -->
