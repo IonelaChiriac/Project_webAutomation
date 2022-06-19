@@ -5,8 +5,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Calendar;
 import java.util.Properties;
+
+import org.apache.commons.compress.utils.IOUtils;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -108,6 +111,21 @@ public class Base_class {
 		String path = System.getProperty("user.dir")+"\\reports\\screenshots\\"+ScreenshotName+".png";	
 		File destination = new File(path);
 		FileUtils.copyFile(SRC,destination );
+
+
+		return path;
+		}
+	
+	public String capturescreenshotAsBase64(String ScreenshotName) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot)driver;
+
+		File SRC= ts.getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir")+"\\reports\\screenshots\\"+ScreenshotName+".png";	
+		File destination = new File(path);
+		FileUtils.copyFile(SRC,destination );
+		byte[] imagesBytes = IOUtils.toByteArray((new FileInputStream(path)));
+		return Base64.getEncoder().encodeToString(imagesBytes);
+		
 
 
 		return path;
