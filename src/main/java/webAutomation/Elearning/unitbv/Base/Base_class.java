@@ -120,7 +120,7 @@ public class Base_class {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 
 		File SRC= ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"\\reports\\screenshots\\"+ScreenshotName+".png";	
+		String path = System.getProperty("user.dir")+"/reports/screenshots/"+ScreenshotName+".png";	
 		File destination = new File(path);
 		FileUtils.copyFile(SRC,destination );
 		byte[] imagesBytes = IOUtils.toByteArray((new FileInputStream(path)));
@@ -128,7 +128,6 @@ public class Base_class {
 		
 
 
-		return path;
 		}
 
 	public void sendKeysInElement(WebElement ele, String text) throws IOException {

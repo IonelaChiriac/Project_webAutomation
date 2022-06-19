@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import webAutomation.Elearning.unitbv.Base.Base_class;
 
 	//adding elements in LogOutPage method
@@ -27,7 +29,7 @@ public class LogOutPage extends Base_class {
 		PageFactory.initElements(driver, this);
 	}
 	
-	int i=1;
+	
 	
 	public void log_out() throws InterruptedException {
 		  String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
@@ -36,13 +38,17 @@ public class LogOutPage extends Base_class {
 			if(menuBtn.isDisplayed()) {
 	
 		clickElement(menuBtn);
-		test.pass("<a href="+capturescreenshot("ConfigMenu"+timestamp)+"><img src="+capturescreenshot("ConfigMenu"+timestamp)+" /></a>");
-++i;
+		test.pass("opening Config Menu",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("ConfigMenu"+timestamp)).build());
+
+		//test.pass("<a href="+capturescreenshot("ConfigMenu"+timestamp)+"><img src="+capturescreenshot("ConfigMenu"+timestamp)+" /></a>");
+
 		Thread.sleep(1000);
 		
 		clickElement(logoutBtn);
 		Thread.sleep(1000);
-		test.pass("<a href="+capturescreenshot("AfterLogout")+"><img src="+capturescreenshot("AfterLogout")+" /></a>");
+		test.pass("After Logout",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterLogout")).build());
+
+		//test.pass("<a href="+capturescreenshot("AfterLogout")+"><img src="+capturescreenshot("AfterLogout")+" /></a>");
 
 		}
 		}

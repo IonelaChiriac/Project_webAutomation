@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import webAutomation.Elearning.unitbv.Base.Base_class;
 
 public class PostAnnouncementPage extends Base_class { 
@@ -61,12 +63,16 @@ public class PostAnnouncementPage extends Base_class {
 	public void PostAnnouncement(String postMsg,String contentMsg) throws InterruptedException, IOException {
 		clickElement(click_pagesDropDnBtn);
 		clickElement(blogLink);
-		test.pass("<a href="+capturescreenshot("BlogPostAnnouncement")+"><img src="+capturescreenshot("BlogPostAnnouncement")+" /></a>");
+		test.pass("Blog Post Page",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("BlogPostAnnouncement")).build());
+
+		//test.pass("<a href="+capturescreenshot("BlogPostAnnouncement")+"><img src="+capturescreenshot("BlogPostAnnouncement")+" /></a>");
 		clickElement(addNewPost);
 		sendKeysInElement(fieldTextTitle, postMsg);
 		Thread.sleep(1000);
 		sendKeysInElement(fieldTextContent, contentMsg);
-		test.pass("<a href="+capturescreenshot("AfterInsertingMessage")+"><img src="+capturescreenshot("AfterInsertingMessage")+" /></a>");
+		test.pass("After Inserrting Message",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterInsertingMessage")).build());
+
+		//test.pass("<a href="+capturescreenshot("AfterInsertingMessage")+"><img src="+capturescreenshot("AfterInsertingMessage")+" /></a>");
 
 		Thread.sleep(1000);
 		clickElement(fileSelection);
@@ -75,15 +81,21 @@ public class PostAnnouncementPage extends Base_class {
 		Thread.sleep(1000);
 		clickElement(click_File);
 		clickElement(click_SaveFile);
-		test.pass("<a href="+capturescreenshot("SelectionFile")+"><img src="+capturescreenshot("SelectionFile")+" /></a>");
+		test.pass("SelectionFile",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SelectionFile")).build());
+
+		//test.pass("<a href="+capturescreenshot("SelectionFile")+"><img src="+capturescreenshot("SelectionFile")+" /></a>");
 		Thread.sleep(1000);
 		clickElement(click_optionBt);
-		test.pass("<a href="+capturescreenshot("click_optionBt")+"><img src="+capturescreenshot("click_optionBt")+" /></a>");
+		test.pass("After Click on option button",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("click_optionBt")).build());
+
+		//test.pass("<a href="+capturescreenshot("click_optionBt")+"><img src="+capturescreenshot("click_optionBt")+" /></a>");
 		Thread.sleep(1000);
 		clickElement(select_onlyMe);
 		Thread.sleep(1000);
 		clickElement(click_SaveBtn);
-		test.pass("<a href="+capturescreenshot("SubmitAnnouncement")+"><img src="+capturescreenshot("SubmitAnnouncement")+" /></a>");	
+		test.pass("After Submit",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SubmitAnnouncement")).build());
+
+		//test.pass("<a href="+capturescreenshot("SubmitAnnouncement")+"><img src="+capturescreenshot("SubmitAnnouncement")+" /></a>");	
 		Thread.sleep(1000);
 
 		

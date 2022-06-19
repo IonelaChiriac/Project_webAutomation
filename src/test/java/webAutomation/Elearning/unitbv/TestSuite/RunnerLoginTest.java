@@ -29,10 +29,10 @@ public class RunnerLoginTest extends Base_class {
 		String userid = prop.getProperty("id"); //prop will take value of id from config.properties file
 		String Password = prop.getProperty("password"); //prop will take value of password from config.properties file
 //		test.pass("<a href="+capturescreenshot("BeforeLogin")+"><img src="+capturescreenshot("BeforeLogin"+".png")+" /></a>");
-		test.pass(MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshot("BeforeLogin")).build());
+		test.pass("Before Login Screenshot",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("BeforeLogin")).build());
 		log.login(user,password); //call login methold from LoginPage, passed two Parameter.
 		test.pass("Student Enter Student email and Password Successfully");
-		test.pass(MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshot("AfterLogin")).build());
+		test.pass("After Login Screenshot",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterLogin")).build());
 		//test.pass("<a href="+capturescreenshot("AfterLogin")+"><img src="+capturescreenshot("AfterLogin"+".png")+" /></a>");
 
 		Thread.sleep(2000);

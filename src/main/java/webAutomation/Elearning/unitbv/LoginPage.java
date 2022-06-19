@@ -38,7 +38,7 @@ public class LoginPage extends Base_class{
 		
 		sendKeysInElement(password, Password);
 		Thread.sleep(1000);
-		test.pass(MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshot("SendKeysforUseridandPassword")).build());
+		test.pass("After Inserting credentials",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SendKeysforUseridandPassword")).build());
 //		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 
 		clickElement(loginBtn);

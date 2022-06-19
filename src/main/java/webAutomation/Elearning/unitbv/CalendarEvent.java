@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import webAutomation.Elearning.unitbv.Base.Base_class;
 
  	//adding elements in CalendarEvent method
@@ -68,7 +70,9 @@ public class CalendarEvent extends Base_class{
 		clickElement(click_pagesDropDnBtn);
 		Thread.sleep(1000);
 		clickElement(calendarLink);
-		test.pass("<a href="+capturescreenshot("CalenderLinkPage")+"><img src="+capturescreenshot("CalenderLinkPage")+" /></a>");
+		test.pass("Calendar Page Screenshot",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("CalendarLinkPage")).build());
+
+		//test.pass("<a href="+capturescreenshot("CalenderLinkPage")+"><img src="+capturescreenshot("CalenderLinkPage")+" /></a>");
 
 		Thread.sleep(1000);
 		clickElement(click_nextEventsDropDnBtn);
@@ -88,14 +92,18 @@ public class CalendarEvent extends Base_class{
 		selectByValue(hour,hours);
 		Thread.sleep(1000);
 		selectByValue(minute,mins);
-		test.pass("<a href="+capturescreenshot("AfterInsertingallfieldsValues")+"><img src="+capturescreenshot("AfterInsertingallfieldsValues")+" /></a>");
+		test.pass("After Inserting field values",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterInsertingallfieldsValues")).build());
+
+		//test.pass("<a href="+capturescreenshot("AfterInsertingallfieldsValues")+"><img src="+capturescreenshot("AfterInsertingallfieldsValues")+" /></a>");
 
 		Thread.sleep(1000);
 		clickElement(scroll_button);
 		Thread.sleep(1000);
 		clickElement(click_monthEventDropdBtn);
 		clickElement(click_monthEvents);
-		test.pass("<a href="+capturescreenshot("AfterEvent")+"><img src="+capturescreenshot("AfterEvent")+" /></a>");
+		test.pass("After Calendar Event",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterEvent")).build());
+
+		//test.pass("<a href="+capturescreenshot("AfterEvent")+"><img src="+capturescreenshot("AfterEvent")+" /></a>");
 
 		Thread.sleep(1000);		
 	}

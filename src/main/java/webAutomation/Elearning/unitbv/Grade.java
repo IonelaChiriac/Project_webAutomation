@@ -7,13 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import webAutomation.Elearning.unitbv.Base.Base_class;
 
 	//adding elements in Grade method
 	//extends -> access Base_class methods
 public class Grade extends Base_class {
 
-	
+	//Element Locators
 	@FindBy(xpath ="//span[text()='Pagina principală']")
 	WebElement homePage;
 	
@@ -40,13 +42,17 @@ public class Grade extends Base_class {
 		clickElement(homePage);
 		Thread.sleep(1000);
 		clickElement(courseLink);
-		test.pass("<a href="+capturescreenshot("OnCoursePage")+"><img src="+capturescreenshot("CoursePage")+" /></a>");
+		test.pass("Course Page",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("CoursePage")).build());
+//		test.pass("<a href="+capturescreenshot("OnCoursePage")+"><img src="+capturescreenshot("CoursePage")+" /></a>");
 
 		Thread.sleep(1000);
 		clickElement(gradesLink);
-		test.pass("<a href="+capturescreenshot("GradesScreen")+"><img src="+capturescreenshot("GradesScreen")+" /></a>");
+		test.pass("Grades Screen",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("GradesScreen")).build());
+
+		//test.pass("<a href="+capturescreenshot("GradesScreen")+"><img src="+capturescreenshot("GradesScreen")+" /></a>");
 
 		Thread.sleep(1000);
+		test.pass(gradeScore.getText());
 		System.out.println("My Grade is : " + gradeScore.getText());
 
 	}
