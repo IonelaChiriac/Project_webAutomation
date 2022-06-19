@@ -64,17 +64,17 @@ public class CalendarEvent extends Base_class{
 	
 	//calling elements from the method CalendarEvent
 	public void SetCalendarEvent(String textArea,String dates,String months,String years, String hours,String mins) throws InterruptedException, IOException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_pagesDropDnBtn);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(calendarLink);
 		test.pass("<a href="+capturescreenshot("CalenderLinkPage")+"><img src="+capturescreenshot("CalenderLinkPage")+" /></a>");
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_nextEventsDropDnBtn);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_nextEvents);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_newEventBtn);
 		Thread.sleep(1000);
 		sendKeysInElement(fieldText, textArea);
@@ -92,12 +92,12 @@ public class CalendarEvent extends Base_class{
 
 		Thread.sleep(1000);
 		clickElement(scroll_button);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		clickElement(click_monthEventDropdBtn);
 		clickElement(click_monthEvents);
 		test.pass("<a href="+capturescreenshot("AfterEvent")+"><img src="+capturescreenshot("AfterEvent")+" /></a>");
 
-		Thread.sleep(5000);		
+		Thread.sleep(1000);		
 	}
 }
 

@@ -38,10 +38,10 @@ public class LogOutPage extends Base_class {
 		clickElement(menuBtn);
 		test.pass("<a href="+capturescreenshot("ConfigMenu"+timestamp)+"><img src="+capturescreenshot("ConfigMenu"+timestamp)+" /></a>");
 ++i;
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		clickElement(logoutBtn);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		test.pass("<a href="+capturescreenshot("AfterLogout")+"><img src="+capturescreenshot("AfterLogout")+" /></a>");
 
 		}

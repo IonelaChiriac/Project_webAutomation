@@ -32,14 +32,14 @@ public class LoginPage extends Base_class{
 	public void login(String Userid, String Password) throws InterruptedException, IOException {
 		
 		sendKeysInElement(id, Userid);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		sendKeysInElement(password, Password);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 
 		clickElement(loginBtn);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	

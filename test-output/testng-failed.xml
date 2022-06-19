@@ -3,27 +3,38 @@
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
   <test thread-count="5" verbose="10" name="Test(failed)">
     <classes>
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
+        <methods>
+          <include name="runner_grade"/>
+          <include name="closeTests"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
         <methods>
           <include name="runner_calender" invocation-numbers="0"/>
-          <include name="Setup"/>
+          <include name="closeTests"/>
           <include name="tearDown"/>
+          <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
         <methods>
           <include name="runner_postAnnouncement" invocation-numbers="0"/>
-          <include name="Setup"/>
+          <include name="closeTests"/>
           <include name="tearDown"/>
+          <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
         <methods>
-          <include name="runner_grade"/>
-          <include name="Setup"/>
+          <include name="runner" invocation-numbers="0"/>
+          <include name="closeTests"/>
           <include name="tearDown"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

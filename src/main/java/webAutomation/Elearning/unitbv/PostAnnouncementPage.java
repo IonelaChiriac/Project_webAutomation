@@ -59,46 +59,33 @@ public class PostAnnouncementPage extends Base_class {
 	
 	//calling elements from the method CalendarEvent
 	public void PostAnnouncement(String postMsg,String contentMsg) throws InterruptedException, IOException {
-		//Thread.sleep(2000);
 		clickElement(click_pagesDropDnBtn);
-		//Thread.sleep(2000);
 		clickElement(blogLink);
 		test.pass("<a href="+capturescreenshot("BlogPostAnnouncement")+"><img src="+capturescreenshot("BlogPostAnnouncement")+" /></a>");
-
-		//Thread.sleep(2000);
 		clickElement(addNewPost);
-		//Thread.sleep(2000);
 		sendKeysInElement(fieldTextTitle, postMsg);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		sendKeysInElement(fieldTextContent, contentMsg);
 		test.pass("<a href="+capturescreenshot("AfterInsertingMessage")+"><img src="+capturescreenshot("AfterInsertingMessage")+" /></a>");
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(fileSelection);
-		Thread.sleep(2000);				
+		Thread.sleep(1000);				
 		clickElement(click_personalFiles);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_File);
-//		Thread.sleep(2000);
 		clickElement(click_SaveFile);
 		test.pass("<a href="+capturescreenshot("SelectionFile")+"><img src="+capturescreenshot("SelectionFile")+" /></a>");
-
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_optionBt);
 		test.pass("<a href="+capturescreenshot("click_optionBt")+"><img src="+capturescreenshot("click_optionBt")+" /></a>");
-
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(select_onlyMe);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickElement(click_SaveBtn);
-		test.pass("<a href="+capturescreenshot("SubmitAnnouncement")+"><img src="+capturescreenshot("SubmitAnnouncement")+" /></a>");
-
-	
-		
+		test.pass("<a href="+capturescreenshot("SubmitAnnouncement")+"><img src="+capturescreenshot("SubmitAnnouncement")+" /></a>");	
 		Thread.sleep(1000);
 
 		
 	}
 }
-
-//test jenkins
