@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import webAutomation.Elearning.unitbv.Base.Base_class;
 
 	//adding elements in LoginPage method
@@ -36,7 +38,8 @@ public class LoginPage extends Base_class{
 		
 		sendKeysInElement(password, Password);
 		Thread.sleep(1000);
-		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
+		test.pass(MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshot("SendKeysforUseridandPassword")).build());
+//		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 
 		clickElement(loginBtn);
 		Thread.sleep(1000);
