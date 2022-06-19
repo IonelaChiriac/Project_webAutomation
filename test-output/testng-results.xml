@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26677" started-at="2022-06-19T13:29:39 EEST" finished-at="2022-06-19T13:30:05 EEST">
+  <suite name="Suite" duration-ms="144808" started-at="2022-06-19T13:59:47 EEST" finished-at="2022-06-19T14:02:12 EEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26677" started-at="2022-06-19T13:29:39 EEST" finished-at="2022-06-19T13:30:05 EEST">
+    <test name="Test" duration-ms="144808" started-at="2022-06-19T13:59:47 EEST" finished-at="2022-06-19T14:02:12 EEST">
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@365c30cc]" name="Setup" is-config="true" duration-ms="9153" started-at="2022-06-19T13:29:40 EEST" finished-at="2022-06-19T13:29:49 EEST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="Setup" is-config="true" duration-ms="9916" started-at="2022-06-19T13:59:49 EEST" finished-at="2022-06-19T13:59:59 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@365c30cc]" name="runner" duration-ms="15544" started-at="2022-06-19T13:29:49 EEST" data-provider="testDataLogin" finished-at="2022-06-19T13:30:05 EEST">
+        <test-method status="PASS" signature="runner(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="runner" duration-ms="14902" started-at="2022-06-19T13:59:59 EEST" data-provider="testDataLogin" finished-at="2022-06-19T14:00:14 EEST">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner -->
-        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@365c30cc]" name="closeTests" is-config="true" duration-ms="594" started-at="2022-06-19T13:30:05 EEST" finished-at="2022-06-19T13:30:05 EEST">
+        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="closeTests" is-config="true" duration-ms="446" started-at="2022-06-19T14:00:14 EEST" finished-at="2022-06-19T14:00:14 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTests -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@365c30cc]" name="tearDown" is-config="true" duration-ms="1369" started-at="2022-06-19T13:30:05 EEST" finished-at="2022-06-19T13:30:07 EEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="tearDown" is-config="true" duration-ms="1733" started-at="2022-06-19T14:02:12 EEST" finished-at="2022-06-19T14:02:14 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="Setup" is-config="true" duration-ms="5328" started-at="2022-06-19T14:00:59 EEST" finished-at="2022-06-19T14:01:05 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="runner_postAnnouncement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="runner_postAnnouncement" duration-ms="34215" started-at="2022-06-19T14:01:05 EEST" data-provider="testdataPost" finished-at="2022-06-19T14:01:39 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ionela2022]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Post message from excel test 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Content message from excel test 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_postAnnouncement -->
+        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="closeTests" is-config="true" duration-ms="464" started-at="2022-06-19T14:01:39 EEST" finished-at="2022-06-19T14:01:39 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTests -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="Setup" is-config="true" duration-ms="5246" started-at="2022-06-19T14:00:14 EEST" finished-at="2022-06-19T14:00:19 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="runner_calender(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="runner_calender" duration-ms="39543" started-at="2022-06-19T14:00:19 EEST" data-provider="testDataEvent" finished-at="2022-06-19T14:00:59 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ionela2022]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test from excel 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2022]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_calender -->
+        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="closeTests" is-config="true" duration-ms="430" started-at="2022-06-19T14:00:59 EEST" finished-at="2022-06-19T14:00:59 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTests -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="Setup" is-config="true" duration-ms="5478" started-at="2022-06-19T14:01:39 EEST" finished-at="2022-06-19T14:01:45 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="runner_grade" duration-ms="26648" started-at="2022-06-19T14:01:45 EEST" finished-at="2022-06-19T14:02:12 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runner_grade -->
+        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="closeTests" is-config="true" duration-ms="411" started-at="2022-06-19T14:02:12 EEST" finished-at="2022-06-19T14:02:12 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTests -->
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

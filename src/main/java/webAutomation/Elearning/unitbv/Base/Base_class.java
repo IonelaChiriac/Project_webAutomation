@@ -29,6 +29,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -153,7 +154,9 @@ public class Base_class {
 		Select select = new Select(element);
 		select.selectByValue(val);
 		test.pass("user successfully set the drop down value of "+ val +" on this element "+element);
-		test.pass("<a href="+capturescreenshot("dropDownSet"+dd)+"><img src="+capturescreenshot("DropdownSet"+dd+".png")+" /></a>");
+		test.pass("Grades Screen",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("dropDownSet"+dd)).build());
+
+//		test.pass("<a href="+capturescreenshot("dropDownSet"+dd)+"><img src="+capturescreenshot("DropdownSet"+dd+".png")+" /></a>");
 		++dd;
 	}
 	

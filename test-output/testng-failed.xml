@@ -27,14 +27,6 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
-        <methods>
-          <include name="runner" invocation-numbers="0"/>
-          <include name="closeTests"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
