@@ -46,7 +46,7 @@ public class LogOutPage extends Base_class {
 		
 		clickElement(logoutBtn);
 		Thread.sleep(1000);
-		test.pass("After Logout",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterLogout")).build());
+		test.pass("After Logout",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterLogout"+timestamp)).build());
 
 		//test.pass("<a href="+capturescreenshot("AfterLogout")+"><img src="+capturescreenshot("AfterLogout")+" /></a>");
 

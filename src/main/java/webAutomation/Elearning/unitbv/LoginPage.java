@@ -1,6 +1,8 @@
 package webAutomation.Elearning.unitbv;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,7 +40,9 @@ public class LoginPage extends Base_class{
 		
 		sendKeysInElement(password, Password);
 		Thread.sleep(1000);
-		test.pass("After Inserting credentials",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SendKeysforUseridandPassword")).build());
+		  String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":", "-");
+
+		test.pass("After Inserting credentials",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SendKeysforUseridandPassword"+timestamp)).build());
 //		test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 
 		clickElement(loginBtn);
