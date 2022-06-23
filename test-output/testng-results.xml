@@ -1,146 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
+<testng-results ignored="3" total="7" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="144808" started-at="2022-06-19T13:59:47 EEST" finished-at="2022-06-19T14:02:12 EEST">
+  <suite started-at="2022-06-23T22:20:01 EEST" name="Suite" finished-at="2022-06-23T22:21:21 EEST" duration-ms="80223">
     <groups>
     </groups>
-    <test name="Test" duration-ms="144808" started-at="2022-06-19T13:59:47 EEST" finished-at="2022-06-19T14:02:12 EEST">
+    <test started-at="2022-06-23T22:20:01 EEST" name="Test" finished-at="2022-06-23T22:21:21 EEST" duration-ms="80223">
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="Setup" is-config="true" duration-ms="9916" started-at="2022-06-19T13:59:49 EEST" finished-at="2022-06-19T13:59:59 EEST">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:01 EEST" name="Setup" finished-at="2022-06-23T22:20:13 EEST" duration-ms="12316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="runner" duration-ms="14902" started-at="2022-06-19T13:59:59 EEST" data-provider="testDataLogin" finished-at="2022-06-19T14:00:14 EEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ionela2022]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="runner()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:13 EEST" name="runner" finished-at="2022-06-23T22:20:21 EEST" duration-ms="8065" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertFalse(Assert.java:34)
+at junit.framework.Assert.assertFalse(Assert.java:41)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+at webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest.runner(RunnerLoginTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner -->
-        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="closeTests" is-config="true" duration-ms="446" started-at="2022-06-19T14:00:14 EEST" finished-at="2022-06-19T14:00:14 EEST">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:21 EEST" name="afterMethod" finished-at="2022-06-23T22:20:26 EEST" duration-ms="4574" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeTests -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@282003e1]" name="tearDown" is-config="true" duration-ms="1733" started-at="2022-06-19T14:02:12 EEST" finished-at="2022-06-19T14:02:14 EEST">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:21:21 EEST" name="tearDown" finished-at="2022-06-23T22:21:22 EEST" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="Setup" is-config="true" duration-ms="5328" started-at="2022-06-19T14:00:59 EEST" finished-at="2022-06-19T14:01:05 EEST">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:20:43 EEST" name="Setup" finished-at="2022-06-23T22:20:53 EEST" duration-ms="10587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner_postAnnouncement(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="runner_postAnnouncement" duration-ms="34215" started-at="2022-06-19T14:01:05 EEST" data-provider="testdataPost" finished-at="2022-06-19T14:01:39 EEST">
+        <test-method signature="runner_postAnnouncement(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:20:53 EEST" name="runner_postAnnouncement" data-provider="testdataPost" finished-at="2022-06-23T22:21:01 EEST" duration-ms="7532" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
+                <![CDATA[Post message from excel test]]>
               </value>
             </param>
             <param index="1">
-              <value>
-                <![CDATA[Ionela2022]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Post message from excel test 1]]>
-              </value>
-            </param>
-            <param index="3">
               <value>
                 <![CDATA[Content message from excel test 1]]>
               </value>
             </param>
           </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertFalse(Assert.java:34)
+at junit.framework.Assert.assertFalse(Assert.java:41)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+at webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest.runner_postAnnouncement(RunnerPostMessageTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_postAnnouncement -->
-        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@11e21d0e]" name="closeTests" is-config="true" duration-ms="464" started-at="2022-06-19T14:01:39 EEST" finished-at="2022-06-19T14:01:39 EEST">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:21:01 EEST" name="afterMethod" finished-at="2022-06-23T22:21:01 EEST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeTests -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="Setup" is-config="true" duration-ms="5246" started-at="2022-06-19T14:00:14 EEST" finished-at="2022-06-19T14:00:19 EEST">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:27 EEST" name="Setup" finished-at="2022-06-23T22:20:34 EEST" duration-ms="7416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner_calender(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="runner_calender" duration-ms="39543" started-at="2022-06-19T14:00:19 EEST" data-provider="testDataEvent" finished-at="2022-06-19T14:00:59 EEST">
+        <test-method signature="runner_calender(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:34 EEST" name="runner_calender" data-provider="testDataEvent" finished-at="2022-06-23T22:20:42 EEST" duration-ms="7349" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ionela.chiriac@student.unitbv.ro]]>
+                <![CDATA[Event created with data from excel]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Ionela2022]]>
+                <![CDATA[27]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test from excel 1]]>
+                <![CDATA[6]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[27]]>
+                <![CDATA[2022]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2022]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
                 <![CDATA[19]]>
               </value>
             </param>
-            <param index="7">
+            <param index="5">
               <value>
                 <![CDATA[55]]>
               </value>
             </param>
           </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertFalse(Assert.java:34)
+at junit.framework.Assert.assertFalse(Assert.java:41)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+at webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest.runner_calender(RunnerCalendarEventTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_calender -->
-        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@62fdb4a6]" name="closeTests" is-config="true" duration-ms="430" started-at="2022-06-19T14:00:59 EEST" finished-at="2022-06-19T14:00:59 EEST">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:42 EEST" name="afterMethod" finished-at="2022-06-23T22:20:43 EEST" duration-ms="930" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeTests -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="Setup" is-config="true" duration-ms="5478" started-at="2022-06-19T14:01:39 EEST" finished-at="2022-06-19T14:01:45 EEST">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:01 EEST" name="Setup" finished-at="2022-06-23T22:21:09 EEST" duration-ms="7200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="runner_grade" duration-ms="26648" started-at="2022-06-19T14:01:45 EEST" finished-at="2022-06-19T14:02:12 EEST">
+        <test-method signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:09 EEST" name="runner_grade" finished-at="2022-06-23T22:21:16 EEST" duration-ms="7615" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertFalse(Assert.java:34)
+at junit.framework.Assert.assertFalse(Assert.java:41)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+at webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest.runner_grade(RunnerGradeTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_grade -->
-        <test-method status="PASS" signature="closeTests()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@1dd02175]" name="closeTests" is-config="true" duration-ms="411" started-at="2022-06-19T14:02:12 EEST" finished-at="2022-06-19T14:02:12 EEST">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:16 EEST" name="afterMethod" finished-at="2022-06-23T22:21:21 EEST" duration-ms="4558" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeTests -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

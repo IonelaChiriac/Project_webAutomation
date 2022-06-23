@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="10" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <test thread-count="5" name="Test(failed)" verbose="10">
     <classes>
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
-        <methods>
-          <include name="runner_grade"/>
-          <include name="closeTests"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
         <methods>
           <include name="runner_calender" invocation-numbers="0"/>
-          <include name="closeTests"/>
+          <include name="afterMethod"/>
           <include name="tearDown"/>
           <include name="Setup"/>
         </methods>
@@ -22,11 +14,27 @@
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
         <methods>
           <include name="runner_postAnnouncement" invocation-numbers="0"/>
-          <include name="closeTests"/>
+          <include name="afterMethod"/>
           <include name="tearDown"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
+        <methods>
+          <include name="runner"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
+        <methods>
+          <include name="runner_grade"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

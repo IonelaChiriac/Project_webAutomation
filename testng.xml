@@ -3,8 +3,7 @@
 <suite   parallel="false" preserve-order="true" verbose="10" name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-          <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest"/>
-    
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest"/>   
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest"/>
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest"/>
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest"/>
