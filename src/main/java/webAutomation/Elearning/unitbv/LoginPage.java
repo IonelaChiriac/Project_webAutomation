@@ -52,8 +52,7 @@ public class LoginPage extends Base_class {
 		clickElement(loginBtn);
 		Thread.sleep(3000);
 		if(loginBtn.isDisplayed()) {
-			test.fail("Not Login",MediaEntityBuilder.createScreenCaptureFromBase64String(
-					capturescreenshotAsBase64("element")).build());
+			test.fail("Not Login",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("element")).build());
 			Assert.assertFalse(true);
 		}
 	}

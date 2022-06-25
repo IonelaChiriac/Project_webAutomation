@@ -68,8 +68,7 @@ public class CalendarEvent extends Base_class {
 		clickElement(click_pagesDropDnBtn);
 		Thread.sleep(1000);
 		clickElement(calendarLink);
-		test.pass("Calendar Page Screenshot", MediaEntityBuilder
-				.createScreenCaptureFromBase64String(capturescreenshotAsBase64("CalendarLinkPage")).build());
+		test.pass("Calendar Page Screenshot", MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("CalendarLinkPage")).build());
 		// test.pass("<a href="+capturescreenshot("CalenderLinkPage")+"><img src="+capturescreenshot("CalenderLinkPage")+" /></a>");
 		Thread.sleep(1000);
 		clickElement(click_nextEventsDropDnBtn);
@@ -97,8 +96,7 @@ public class CalendarEvent extends Base_class {
 		Thread.sleep(1000);
 		clickElement(click_monthEventDropdBtn);
 		clickElement(click_monthEvents);
-		test.pass("After Calendar Event", MediaEntityBuilder
-				.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterEvent")).build());
+		test.pass("After Calendar Event", MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("AfterEvent")).build());
 		// test.pass("<a href="+capturescreenshot("AfterEvent")+"><img src="+capturescreenshot("AfterEvent")+" /></a>");
 		Thread.sleep(1000);
 	}

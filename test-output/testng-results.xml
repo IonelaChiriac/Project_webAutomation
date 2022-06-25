@@ -2,24 +2,58 @@
 <testng-results ignored="3" total="7" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-23T22:20:01 EEST" name="Suite" finished-at="2022-06-23T22:21:21 EEST" duration-ms="80223">
+  <suite started-at="2022-06-25T15:29:02 EEST" name="Suite" finished-at="2022-06-25T15:29:58 EEST" duration-ms="56426">
     <groups>
     </groups>
-    <test started-at="2022-06-23T22:20:01 EEST" name="Test" finished-at="2022-06-23T22:21:21 EEST" duration-ms="80223">
+    <test started-at="2022-06-25T15:29:02 EEST" name="Test" finished-at="2022-06-25T15:29:58 EEST" duration-ms="56426">
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:01 EEST" name="Setup" finished-at="2022-06-23T22:20:13 EEST" duration-ms="12316" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-25T15:29:02 EEST" name="Setup" finished-at="2022-06-25T15:29:08 EEST" duration-ms="6393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="runner()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:13 EEST" name="runner" finished-at="2022-06-23T22:20:21 EEST" duration-ms="8065" status="FAIL">
-          <exception class="junit.framework.AssertionFailedError">
+        <test-method signature="runner()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-25T15:29:08 EEST" name="runner" finished-at="2022-06-25T15:29:17 EEST" duration-ms="9196" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e867ad622e3f01a7add0a91b41014d9, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63273}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e867ad622e3f01a7add0a91b41014d9]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertFalse(Assert.java:34)
-at junit.framework.Assert.assertFalse(Assert.java:41)
-at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e867ad622e3f01a7add0a91b41014d9, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63273}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e867ad622e3f01a7add0a91b41014d9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:54)
 at webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest.runner(RunnerLoginTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -51,25 +85,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:20:21 EEST" name="afterMethod" finished-at="2022-06-23T22:20:26 EEST" duration-ms="4574" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-25T15:29:17 EEST" name="afterMethod" finished-at="2022-06-25T15:29:18 EEST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-23T22:21:21 EEST" name="tearDown" finished-at="2022-06-23T22:21:22 EEST" duration-ms="1341" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest@5b38c1ec]" started-at="2022-06-25T15:29:58 EEST" name="tearDown" finished-at="2022-06-25T15:29:59 EEST" duration-ms="955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:20:43 EEST" name="Setup" finished-at="2022-06-23T22:20:53 EEST" duration-ms="10587" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-25T15:29:31 EEST" name="Setup" finished-at="2022-06-25T15:29:34 EEST" duration-ms="3489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="runner_postAnnouncement(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:20:53 EEST" name="runner_postAnnouncement" data-provider="testdataPost" finished-at="2022-06-23T22:21:01 EEST" duration-ms="7532" status="FAIL">
+        <test-method signature="runner_postAnnouncement(java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-25T15:29:34 EEST" name="runner_postAnnouncement" data-provider="testdataPost" finished-at="2022-06-25T15:29:42 EEST" duration-ms="7715" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -78,18 +112,52 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[Content message from excel test 1]]>
+                <![CDATA[Content message from excel test ]]>
               </value>
             </param>
           </params>
-          <exception class="junit.framework.AssertionFailedError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a55978c3fd36c739863e4b617daf4ad, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63320/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a55978c3fd36c739863e4b617daf4ad]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertFalse(Assert.java:34)
-at junit.framework.Assert.assertFalse(Assert.java:41)
-at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a55978c3fd36c739863e4b617daf4ad, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63320/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a55978c3fd36c739863e4b617daf4ad
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:54)
 at webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest.runner_postAnnouncement(RunnerPostMessageTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -121,21 +189,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_postAnnouncement -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-23T22:21:01 EEST" name="afterMethod" finished-at="2022-06-23T22:21:01 EEST" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest@431cd9b2]" started-at="2022-06-25T15:29:42 EEST" name="afterMethod" finished-at="2022-06-25T15:29:43 EEST" duration-ms="532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:27 EEST" name="Setup" finished-at="2022-06-23T22:20:34 EEST" duration-ms="7416" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-25T15:29:19 EEST" name="Setup" finished-at="2022-06-25T15:29:22 EEST" duration-ms="3496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="runner_calender(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:34 EEST" name="runner_calender" data-provider="testDataEvent" finished-at="2022-06-23T22:20:42 EEST" duration-ms="7349" status="FAIL">
+        <test-method signature="runner_calender(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-25T15:29:22 EEST" name="runner_calender" data-provider="testDataEvent" finished-at="2022-06-25T15:29:30 EEST" duration-ms="7841" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -168,14 +236,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="junit.framework.AssertionFailedError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65407e9e70620880b860f57a23dd248e, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63298/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65407e9e70620880b860f57a23dd248e]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertFalse(Assert.java:34)
-at junit.framework.Assert.assertFalse(Assert.java:41)
-at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65407e9e70620880b860f57a23dd248e, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63298/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65407e9e70620880b860f57a23dd248e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:54)
 at webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest.runner_calender(RunnerCalendarEventTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -207,29 +309,63 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_calender -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-23T22:20:42 EEST" name="afterMethod" finished-at="2022-06-23T22:20:43 EEST" duration-ms="930" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest@65f8f5ae]" started-at="2022-06-25T15:29:30 EEST" name="afterMethod" finished-at="2022-06-25T15:29:31 EEST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:01 EEST" name="Setup" finished-at="2022-06-23T22:21:09 EEST" duration-ms="7200" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-25T15:29:43 EEST" name="Setup" finished-at="2022-06-25T15:29:46 EEST" duration-ms="3369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:09 EEST" name="runner_grade" finished-at="2022-06-23T22:21:16 EEST" duration-ms="7615" status="FAIL">
-          <exception class="junit.framework.AssertionFailedError">
+        <test-method signature="runner_grade()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-25T15:29:46 EEST" name="runner_grade" finished-at="2022-06-25T15:29:54 EEST" duration-ms="7724" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15c23314fb97fb4d3f5915f098941193, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63342/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 15c23314fb97fb4d3f5915f098941193]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertFalse(Assert.java:34)
-at junit.framework.Assert.assertFalse(Assert.java:41)
-at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='loginbtn']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CNF0L2U', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15c23314fb97fb4d3f5915f098941193, findElement {using=xpath, value=//button[@id='loginbtn']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\40729\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63342/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 15c23314fb97fb4d3f5915f098941193
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+at webAutomation.Elearning.unitbv.LoginPage.login(LoginPage.java:54)
 at webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest.runner_grade(RunnerGradeTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -261,11 +397,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runner_grade -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-23T22:21:16 EEST" name="afterMethod" finished-at="2022-06-23T22:21:21 EEST" duration-ms="4558" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest@38467116]" started-at="2022-06-25T15:29:54 EEST" name="afterMethod" finished-at="2022-06-25T15:29:58 EEST" duration-ms="4419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
