@@ -26,7 +26,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import edu.emory.mathcs.backport.java.util.Collections;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
