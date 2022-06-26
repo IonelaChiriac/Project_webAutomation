@@ -27,12 +27,14 @@ public class RunnerCalendarEventTest extends Base_class {
 	public void runner_calender(String textArea, String dates, String months,
 		String years, String hours, String mins) throws InterruptedException, IOException {
 		test = extent.createTest("VerifyCalenderEventTest", "Calender Event Test");
-
-		LoginPage log = new LoginPage(driver); // create an object
-		
-		String userid = prop.getProperty("id"); // prop will take value of id from config.properties file
-		String Password = prop.getProperty("password"); // prop will take value of password from config.properties file
-		log.login(userid, Password); // call login methold from LoginPage, passed two Parameter.
+		// create an object
+		LoginPage log = new LoginPage(driver); 
+		// prop will take value of id from config.properties file
+		String userid = prop.getProperty("id"); 
+		// prop will take value of password from config.properties file
+		String Password = prop.getProperty("password"); 
+		// call login methold from LoginPage, passed two parameters
+		log.login(userid, Password); 
 
 		CalendarEvent event = new CalendarEvent(driver);
 		event.SetCalendarEvent(textArea, dates, months, years, hours, mins);

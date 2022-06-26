@@ -34,13 +34,10 @@ public class LogOutPage extends Base_class {
 
 		try {
 			if (menuBtn.isDisplayed()) {
-
 				clickElement(menuBtn);
 				// createScreenCaptureFromBase64String calls this MediaEntityBuilder building
 				// method, capture screenshot as Base64 (convert png files to string)
-				test.pass("opening Config Menu", MediaEntityBuilder
-						.createScreenCaptureFromBase64String(capturescreenshotAsBase64("ConfigMenu" + timestamp))
-						.build());
+				test.pass("opening Config Menu", MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("ConfigMenu" + timestamp)).build());
 				// test.pass("<a href="+capturescreenshot("ConfigMenu"+timestamp)+"><img src="+capturescreenshot("ConfigMenu"+timestamp)+" /></a>");
 				Thread.sleep(1000);
 				clickElement(logoutBtn);

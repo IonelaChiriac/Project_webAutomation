@@ -18,16 +18,16 @@ public class Excel_Base {
 		// FileInputStream argument takes input from excel file, pass the complete path of the file name
 		FileInputStream file = new FileInputStream(
 		ProjectPath + "\\src\\main\\java\\webAutomation\\Elearning\\unitbv\\Utillities\\" + filename + ".xlsx");
-
-		book = new XSSFWorkbook(file); // checks the excel file
-		sheet = book.getSheet(sheetname);// checks the sheet name
+		// checks the excel file
+		book = new XSSFWorkbook(file); 
+		// checks the sheet name
+		sheet = book.getSheet(sheetname);
 	}
 
 	// setting excel file for string, fetch all the values in string type
 	public String settingExcelFileforString(int row, int column) throws IOException {
 
 		String valueData = null;
-
 		// passing automatically number of row and column and converting them to string type
 		valueData = sheet.getRow(row).getCell(column).toString();
 		return valueData;
@@ -43,7 +43,6 @@ public class Excel_Base {
 	public static int getRowCount() {
 		int NoofRows = 0;
 		NoofRows = sheet.getPhysicalNumberOfRows();
-
 		return NoofRows;
 	}
 
@@ -53,7 +52,7 @@ public class Excel_Base {
 
 		int rows = getRowCount();
 		int cols = getColCount();
-		//check the rows from 0, same concepts like array
+		//check the rows from 0, same concepts like array index 0
 		Object data[][] = new Object[rows - 1][cols];
 		for (int i = 1; i < rows; i++) {
 

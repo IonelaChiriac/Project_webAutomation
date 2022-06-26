@@ -68,8 +68,7 @@ public class PostAnnouncementPage extends Base_class {
 		clickElement(blogLink);
 		// createScreenCaptureFromBase64String calls this MediaEntityBuilder building
 		// method, capture screenshot as Base64 (convert png files to string)
-		test.pass("Blog Post Page", MediaEntityBuilder
-				.createScreenCaptureFromBase64String(capturescreenshotAsBase64("BlogPostAnnouncement")).build());
+		test.pass("Blog Post Page", MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("BlogPostAnnouncement")).build());
 		// test.pass("<a href="+capturescreenshot("BlogPostAnnouncement")+"><img
 		// src="+capturescreenshot("BlogPostAnnouncement")+" /></a>");
 		clickElement(addNewPost);

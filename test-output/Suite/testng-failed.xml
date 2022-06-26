@@ -3,22 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="10">
   <test thread-count="5" name="Test(failed)" verbose="10">
     <classes>
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
-        <methods>
-          <include name="runner_calender" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
-        <methods>
-          <include name="runner_postAnnouncement" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
         <methods>
           <include name="runner"/>
@@ -35,6 +19,22 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
+        <methods>
+          <include name="runner_postAnnouncement" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
+      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
+        <methods>
+          <include name="runner_calender" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

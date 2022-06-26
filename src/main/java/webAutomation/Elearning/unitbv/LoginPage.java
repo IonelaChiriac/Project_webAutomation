@@ -39,15 +39,12 @@ public class LoginPage extends Base_class {
 
 		sendKeysInElement(id, Userid);
 		Thread.sleep(1000);
-
 		sendKeysInElement(password, Password);
 		Thread.sleep(1000);
-		String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":",
-				"-");
+		String timestamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()).replaceAll(":","-");
 		// createScreenCaptureFromBase64String calls this MediaEntityBuilder building
 		// method, capture screenshot as Base64 (convert png files to string)
-		test.pass("After Inserting credentials", MediaEntityBuilder.createScreenCaptureFromBase64String(
-				capturescreenshotAsBase64("SendKeysforUseridandPassword" + timestamp)).build());
+		test.pass("After Inserting credentials", MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("SendKeysforUseridandPassword" + timestamp)).build());
 		// test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 		clickElement(loginBtn);
 		Thread.sleep(3000);
