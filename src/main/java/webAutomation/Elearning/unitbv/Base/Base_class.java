@@ -17,6 +17,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -33,6 +37,7 @@ public class Base_class {
 
 	public WebDriver driver;
 	public Properties prop;
+	public String Browser;
 
 	// three objects of extent report
 	// importing the libraries needed for the extent report
@@ -79,10 +84,12 @@ public class Base_class {
 		
 		// it will generate a report for each instance
 		getInstance(); 
+		Browser = prop.getProperty("browser");
+		test = extent.createTest("BrowserLaunchForTest", "BrowserLaunch and Successfully Loaded");
 
 		// browser is launching successfully
+		if(Browser.equals("chrome")) {
 		WebDriverManager.chromedriver().setup();
-		test = extent.createTest("BrowserLaunchForTest", "BrowserLaunch and Successfully Loaded");
 
 		// execution in background with headless, window browser will not open ->chromeOptions.addArguments("--headless");
 		ChromeOptions chromeOptions = new ChromeOptions();
@@ -97,6 +104,16 @@ public class Base_class {
 
 		// open the browser window and maximize it
 		driver = new ChromeDriver(chromeOptions);
+		}else if(Browser.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}else if(Browser.equals("IE")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}else if(Browser.equals("safari")) {
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
+		}
 		driver.manage().window().maximize();
 
 		driver.get("https://elearning.unitbv.ro/login/index.php");

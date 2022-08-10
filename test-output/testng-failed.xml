@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="10">
-  <test thread-count="5" name="Test(failed)" verbose="10">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest">
         <methods>
@@ -11,30 +11,6 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerLoginTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest">
-        <methods>
-          <include name="runner_grade"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerGradeTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest">
-        <methods>
-          <include name="runner_postAnnouncement" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerPostMessageTest -->
-      <class name="webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest">
-        <methods>
-          <include name="runner_calender" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- webAutomation.Elearning.unitbv.TestSuite.RunnerCalendarEventTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

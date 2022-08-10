@@ -48,6 +48,7 @@ public class LoginPage extends Base_class {
 		// test.pass("<a href="+capturescreenshot("SendKeysforUseridandPassword")+"><img src="+capturescreenshot("SendKeysforUseridandPassword")+" /></a>");
 		clickElement(loginBtn);
 		Thread.sleep(3000);
+		//assertion with exeptional element, detect if the element exists
 		try {
 			loginBtn.isDisplayed();
 			test.fail("Not Login",MediaEntityBuilder.createScreenCaptureFromBase64String(capturescreenshotAsBase64("element")).build());
